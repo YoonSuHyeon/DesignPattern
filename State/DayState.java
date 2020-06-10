@@ -5,9 +5,14 @@ public class DayState implements State {
     private DayState(){
 
     }
+    public static State getInstance(){
+        return singleton;
+    }
     public void doClock(Context context , int hour){
-        if(hour <9 || 17 <=hour){
+        if (hour < 9 || 17 <= hour) {
             context.changeState(NightState.getInstance());
+        } else if (12 <= hour && hour < 13) {
+            context.changeState(NoonState.getInstance());
         }
     }
     public void doUse(Context context){
@@ -15,6 +20,7 @@ public class DayState implements State {
     }
     public void doAlarm(Context context){
         context.callSecurityCenter("비상벨(주간)");
+        context.changeState(UrgentState.getInstance());
     }
     public void doPhone(Context context){
         context.callSecurityCenter("일반통화(주간)");
