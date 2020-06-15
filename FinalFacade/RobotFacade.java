@@ -1,5 +1,5 @@
-package robotfacade;
-import robotparts.*;
+package FinalFacade;
+
 public class RobotFacade
 {
 	RobotColor rc;

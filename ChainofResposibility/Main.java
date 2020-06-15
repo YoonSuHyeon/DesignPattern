@@ -8,12 +8,12 @@ public class Main {
         Support diana = new LimitSupport("Diana",200);
         Support elmo    = new OddSupport("Elmo");
         Support fred     = new LimitSupport("Fred", 300);
+        Support hyeja = new HwSupport("윤수현");
 
-
-        alice.setNext(bob).setNext(charlie).setNext(diana).setNext(elmo).setNext(fred);
+        hyeja.setNext(alice).setNext(bob).setNext(charlie).setNext(diana).setNext(elmo).setNext(fred);
 
         for (int i = 0; i < 500; i += 33) {
-            alice.support(new Trouble(i));
+            hyeja.support(new Trouble(i));
         }
     }
 }

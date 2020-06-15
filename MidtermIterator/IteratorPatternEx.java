@@ -11,7 +11,6 @@ public class IteratorPatternEx {
         System.out.println("\nScience subjects :");
         Print(Sc_iterator);
 
-
         System.out.println("\nArts subjects :");
         Print(Ar_iterator);
     }

@@ -1,4 +1,4 @@
-package ChainOfResponsibility;
+package FinalChainOfResponsibility;
 
 enum MessagePriority
 {

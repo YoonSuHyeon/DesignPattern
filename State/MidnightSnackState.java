@@ -13,11 +13,11 @@ public class MidnightSnackState  implements State{
             context.changeState(NightState.getInstance());
         }
     }
-    public void doUse(Context context) { // 금고사용
+    public void doUse(Context context) {
         context.recordLog("금고사용(야식시간)");
         context.callSecurityCenter("비상 :야식시간금고 사용!");
     }
-    public void doAlarm(Context context) { // 비상벨
+    public void doAlarm(Context context) {
         context.callSecurityCenter("비상벨 (야식시간)");
         context.changeState(UrgentState.getInstance());
     }

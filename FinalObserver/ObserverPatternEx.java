@@ -1,4 +1,4 @@
-package Observer;
+package FinalObserver;
 
 import java.util.*;
 class Observer

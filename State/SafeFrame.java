@@ -14,10 +14,10 @@ import java.awt.event.ActionEvent;
 public class SafeFrame extends Frame implements ActionListener, Context {
     private TextField textClock = new TextField(60);        // 현재시간 표시
     private TextArea textScreen = new TextArea(10, 60);    // 경비센터 출력
-    private Button buttonUse = new Button("금고사용");   // 금고사용 버튼
-    private Button buttonAlarm = new Button("비상벨");    // 비상벨 버튼
-    private Button buttonPhone = new Button("일반통화");  // 일반통화 버튼
-    private Button buttonExit = new Button("종료");        // 종료 버튼
+    private Button buttonUse = new Button("DoUse");   // 금고사용 버튼
+    private Button buttonAlarm = new Button("DoAlarm");    // 비상벨 버튼
+    private Button buttonPhone = new Button("DoPhone");  // 일반통화 버튼
+    private Button buttonExit = new Button("Exit");        // 종료 버튼
 
     private State state = DayState.getInstance();           // 현재의 상태
 

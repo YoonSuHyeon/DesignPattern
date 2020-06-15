@@ -1,4 +1,4 @@
-package Mediator;
+package FinalMediator;
 
 abstract class Mediator
 {
