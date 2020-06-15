@@ -8,6 +8,7 @@ import java.util.Iterator;
 public class MacroCommand implements Command {
     // 명령의 집합
     private Stack commands = new Stack();
+
     // 실행
     public void execute() {
         Iterator it = commands.iterator();
@@ -22,13 +23,18 @@ public class MacroCommand implements Command {
         }
     }
     // 최후의 명령을 삭제
-    public void undo() {
+    public Object undo() {
         if (!commands.empty()) {
-            commands.pop();
+            return commands.pop();
         }
+        return null;
     }
+
     // 전부 삭제
     public void clear() {
         commands.clear();
+    }
+    public int size(){
+       return commands.size();
     }
 }

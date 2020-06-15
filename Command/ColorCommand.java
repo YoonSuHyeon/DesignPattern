@@ -16,4 +16,3 @@ public class ColorCommand implements Command {
         drawable.setColor(color);
     }
 }
-
