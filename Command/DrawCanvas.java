@@ -40,7 +40,7 @@ public class DrawCanvas extends Canvas implements Drawable {
             this.repaint();
         }
     }
-    public void clear(){
+    public void clearHistroy(){
         undoHistoryForRedo.clear();
     }
     // 그림 그리기

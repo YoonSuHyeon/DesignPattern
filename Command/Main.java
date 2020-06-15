@@ -60,7 +60,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == clearButton) {
             history.clear();
-            canvas.clear();
+            canvas.clearHistroy();
             canvas.repaint();
         }else if (e.getSource() == redButton) {
             Command cmd = new ColorCommand(canvas, Color.red);
